@@ -1,0 +1,19 @@
+﻿@model List<Lab03.Models.YourModel>
+<h1>Leonardo Figueiredo 200577759</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.pid</td>
+                <td>@item.productname</td>
+            </tr>
+        }
+    </tbody>
+</table>
